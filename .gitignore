@@ -1,0 +1,25 @@
+# Private history: never commit databases or anything generated from them.
+*.db
+*.db-wal
+*.db-shm
+*.sqlite
+*.sqlite3
+data/
+samples/
+out/
+export/
+markdown/
+*.jsonl
+# synthetic test data, no private history
+!tests/fixtures/*.jsonl
+
+# Personal notes and logs
+private/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+.DS_Store
+dist/
